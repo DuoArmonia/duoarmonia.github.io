@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- Libreria Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Libreria AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Duo Armonia – Musica per ogni emozione</title>
+  <meta name="description" content="Duo Armonia: pianoforte e violino per eventi, concerti e serate indimenticabili.">
+  <meta name="author" content="Duo Armonia">
+  <meta name="keywords" content="musica, duo, pianoforte, violino, concerti, duo armonia, colonne sonore, eventi musicali">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Duo Armonia – Musica per ogni emozione">
+  <meta property="og:description" content="Pianoforte e violino per concerti, eventi e serate. Scopri Duo Armonia.">
+  <meta property="og:image" content="images/duo-social.jpg">
+  <meta property="og:url" content="https://tuosito.com">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+ <!-- Animate.css & AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    :root {
+  --main-color: black;
+  --accent-color: #F4D35E;
+  --bg-color: ;
+  --text-color: #333;
+}
+
+/* Corpo del sito */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+
+  /* Sfondo animato con sfumature evidenti e movimento più veloce */
+  background: linear-gradient(-45deg, #ffffff, #e0e0e0, #cccccc, hsla(0, 4%, 14%, 0.007));
+  background-size: 300% 300%;
+  animation: 2s ease-in-out infinite;
+}
+@keyframes waveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.wave-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, orange, gold, black, orange);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: waveGradient 5s ease-in-out infinite;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
+  border-radius: 50px; /* Arrotonda gli angoli del titolo */
+  border-color: #e0e0e0;
+}
+@media (max-width: 600px) {
+  .wave-title {
+    font-size: 2rem; /* Riduci la dimensione del testo su schermi piccoli */
+  border-radius: 20px; /* Arrotonda gli angoli su schermi piccoli */
+  }
+}
+/* Paragrafi */
+p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0.3rem auto;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+
+/* Paragrafi dentro le sezioni principali */
+section p {
+  background: #fdfdfd;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Paragrafi in evidenza */
+.highlight-paragraph {
+  background: #fff8dc;
+  border-left: 4px solid var(--accent-color);
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem 0;
+  font-style: italic;
+}
+
+/* Titoli */
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--main-color);
+  margin-bottom: 0.3rem;
+}
+
+/* Sezioni principali */
+section {
+  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Liste */
+ul {
+  font-size: 1.1rem;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+}
+
+/* Citazioni */
+blockquote {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-left: 5px solid var(--accent-color);
+  font-style: italic;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: right;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --- NAV rimane invariato --- */
+nav {
+  background-color: var(--main-color);
+  padding: 1rem;
+  text-align: center;
+  font-size: medium;
+ 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+   font-size: medium;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+   font-size: medium;
+}
+nav button {
+  background: white;
+  color: black;
+  padding: 0.75rem 1.6rem;
+  border: none;
+  font-family: 'sans serif';
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--main-color), var(--accent-color));
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+:root {
+  --accent-color: #ccc;
+  --main-color: #333;
+}
+
+.hamburger-container {
+  position: fixed;
+  top: 0rem;
+  left: 4rem;
+  z-index: 999;
+}
+
+.hamburger-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--main-color);
+  background: white; 
+  padding: 0.4rem 0.6rem; /* AGGIUNGI per dare spaziatura */
+  border-radius: 6px;     /* AGGIUNGI per arrotondare */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* per visibilità */
+}
+@media (max-width: 600px) {
+  .hamburger-container {
+    left: 1rem; /* Sposta l'icona più a sinistra su schermi piccoli */
+    top: 2rem; /* Sposta l'icona più in basso su schermi piccoli */
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburger-icon {
+    border-radius: none;
+    padding: 0.2rem 0.4rem; /* Riduci la spaziatura su schermi piccoli */
+  }
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px; /* fuori dallo schermo */
+  width: 260px;
+  height: 100vh;
+  background: #f9f9f9; /* bianco-grigio chiaro */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+.side-menu a:hover {
+  background: #e0e0e0;
+}
+
+.side-menu .close-icon {
+  font-size: 1.8rem;
+  align-self: flex-end;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.side-menu.open {
+  left: 0;
+}
+.social-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-menu a {
+  font-size: 1.8rem;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+/* Colori originali delle piattaforme */
+.social-menu a[aria-label="WhatsApp"] {
+  background-color: #25D366;
+}
+
+.social-menu a[aria-label="Facebook"] {
+  background-color: #1877F2;
+}
+
+.social-menu a[aria-label="Email"] {
+  background-color: #D44638; /* Gmail red */
+}
+
+.social-menu a[aria-label="Instagram"] {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
+
+/* Hover effetto zoom */
+.social-menu a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* --- HERO rimane invariato --- */
+.hero {
+
+  position: relative;
+  background: url('https://cdn.wallpapersafari.com/89/50/ZAvjJP.jpg') center/cover no-repeat;
+  color: black;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.hero .overlay {
+  background:black;
+ 
+}
+#galleria-foto {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#galleria-foto h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne */
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive per tablet e mobile */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 colonna su mobile */
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+.hero p {
+  font-size: 4rem;
+  font-family:'Times New Roman', Times, serif;
+
+}
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      display: block;
+      margin: 2rem auto;
+      border: none;
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: var(--main-color);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: var(--accent-color);
+      color: black;
+    }
+
+    
+    blockquote {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-left: 5px solid var(--accent-color);
+  font-style: italic;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+details {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+summary {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+footer {
+  background: #111;
+  color: #f0f0f0;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-bottom p {
+  margin: 0.8rem 0;
+  color:#111;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: rgb(182, 145, 22);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: var(--accent-color);
+  color: black;
+  transform: scale(1.1);
+}
+body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      position: relative;
+    }
+
+    .frame-left,
+    .frame-right {
+      position: fixed;
+      top: 0;
+      width: 60px;
+      height: 100vh;
+      background-repeat: repeat-y;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    .frame-left {
+      left: 0;
+      background-image: url('https://png.pngtree.com/png-clipart/20221222/original/pngtree-music-note-border-png-image_8796712.png'); /* Immagine cornice sinistra */
+    }
+
+    .frame-right {
+      right: 0;
+      background-image: url('https://png.pngtree.com/png-clipart/20221222/original/pngtree-music-note-border-png-image_8796712.png'); /* Immagine cornice destra */
+      transform: scaleX(-1); /* Riflette la cornice per simmetria */
+    }
+
+    .content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* ... Stili esistenti ... */
+.step-section {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.step {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+}
+.step h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+.request-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: auto;
+}
+.request-form h3 {
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+.request-form input,
+.request-form select,
+.request-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.request-form button {
+  background: var(--main-color);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.request-form button:hover {
+  background: var(--accent-color);
+  color: black;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.calendar {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.month {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.day {
+  padding: 8px 0;
+  background: #e0ffe0;
+  border-radius: 6px;
+}
+
+.day.booked {
+  background: #ffd1d1;
+  text-decoration: line-through;
+}
+
+.legend {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.box.free {
+  background: #e0ffe0;
+}
+
+.box.booked {
+  background: #ffd1d1;
+}
+
+.day.duo {
+  background-color: #ffe6f2; /* rosa tenue */
+  border: 1px solid #cc66a3;
+  color: #800040;
+}
+.calendar {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.month {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #444;
+  text-align: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.day {
+  padding: 8px 0;
+  background: #e0ffe0;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .calendar {
+    grid-template-columns: repeat(3, 1fr); /* 3 giorni per riga su mobile */
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  p, section p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  nav {
+    font-size: 1rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero p {
+      font-size: 1.5rem; 
+      padding: 0.5rem;
+    }
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .frame-left,
+  .frame-right {
+    display: none; /* Nasconde le cornici laterali su mobile */
+  }
+
+ 
+  iframe {
+    height: 250px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    padding-top: 42.5%; /* rapporto più “piatto” per telefoni */
+    height: 0;
+  }
+}
+@media (max-width: 600px) {
+  .instagram-media {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 200px; /* altezza fissa per mantenere proporzioni */
+  }
+}
+.back-to-top {
+  background: var(--accent-color);
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  </style>
+</head>
+
+<body>
+  <div class="frame-left"></div>
+  <div class="frame-right"></div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <!-- HERO SECTION -->
+  <section class="home-hero">
+    
+    <div id="particles-js"></div>   
+    <div class="home-overlay"></div>
+    <div class="home-content">
+    <div class= "animate__animated animate__fadeInDown" style="animation-duration: 2s">
+        <div class="hero">
+      <div style="background: white; padding: 1rem; text-align: center;">
+  <h1 class="wave-title">Duo Armonia</h1>
+</div>
+</div>
+    
+     <nav> <button onclick="document.getElementById('chi-siamo').scrollIntoView({behavior: 'smooth'});">Scopri di più</button> </nav> </div>
+      
+    </div>
+    </div>
+  </section>
+<div class="hamburger-container">
+  <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+  <div id="side-menu" class="side-menu">
+    <div class="close-icon" onclick="toggleMenu()">✕</div>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#repertorio">Repertorio</a>
+    <a href="#come-funziona">Come funziona?</a>
+    <a href="#galleria-foto"> Foto</a>
+    <a href="#video">Video</a>
+    <a href="#recensioni">Recensioni</a>
+    <a href="#faq">FAQ</a>
+    <a href="#calendario">Calendario</a>
+    <a href="#contatti">Contatti</a>
+    <a href="#richiesta">Richiesta personalizzata</a>
+    <div class="social-menu">
+  <a href="https://wa.me/393801306646" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/duo.armonia.music" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="mailto:duoarmoniamusic@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.instagram.com/duo.armonia.music/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+  </div>
+</div>
+  <section id="chi-siamo" data-aos="zoom-in-up">
+  <h2>Chi siamo</h2>
+
+  <h3><li>Le nostre origini </li></h3>
+  <p><strong>Duo Armonia</strong> nasce nel gennaio 2025 da un incontro speciale. Ci siamo conosciuti mentre suonavamo da solisti in un’orchestra di ottoni, e fin da subito abbiamo sentito una sintonia particolare. È da quel momento che abbiamo deciso di unire le nostre strade e dare vita a un progetto che parlasse davvero di noi.</p>
+
+  <h3><li>Perché "Armonia"</li></h3>
+  <p>Il nostro nome non è casuale: <em>Armonia</em> rappresenta il nostro modo di vivere e condividere la musica. Quando suoniamo insieme, tutto scorre con naturalezza. Quello che vogliamo trasmettere è proprio questo: equilibrio, emozione e autenticità.</p>
+
+  <h3><li>Dove ci esibiamo</li></h3>
+  <p>Ci esibiamo in contesti molto diversi, sempre con lo stesso obiettivo: creare l’atmosfera giusta per ogni occasione. Suoniamo per <strong>matrimoni</strong> (religiosi e civili), <strong>eventi privati</strong> come battesimi, compleanni, feste in famiglia, oppure in <strong>locali</strong> come ristoranti, pub e bar. Il nostro repertorio è molto vario e spazia dal <em>classico</em> al <em>pop</em>, dalla <em>musica moderna</em> fino alla <em>house</em>. Questo ci permette di adattarci a ogni tipo di pubblico, senza limitarci a un genere solo.</p>
+
+  <h3><li>I nostri valori</li></h3>
+  <p>I valori che ci guidano sono chiari: <strong>passione, impegno, costanza, rispetto, professionalità e puntualità</strong>. La nostra filosofia è semplice ma profonda: <em>fare della passione una professione</em>. E ogni volta che saliamo su un palco, cerchiamo di onorarla al meglio.</p>
+
+  <h3><li>Un traguardo speciale</li></h3>
+  <p>Uno dei momenti più emozionanti del nostro percorso è stato sicuramente partecipare ai provini di <strong>“Tu sì que vales”</strong>. Un’esperienza forte, che ci ha fatto crescere e ci ha dato ancora più carica per continuare su questa strada.</p>
+
+  <div class="gallery">
+    <img src="https://i.imgur.com/Ue0HlIy.jpeg" alt="DUO ARMONIA">
+    <img src="https://i.imgur.com/uyQBW2N.jpeg" alt="DUO ARMONIA">
+  </div>
+</section>
+
+<section id="chi-suona" data-aos="zoom-in-up">
+  <h2>Chi suona nel Duo Armonia</h2>
+
+  <h3>Gianmarco – Sax e Pianoforte</h3>
+  <p>
+    Gianmarco è un musicista versatile che si divide tra il sassofono e il pianoforte. Ha studiato musica privatamente, affinando negli anni una tecnica solida e una sensibilità che lo rendono un interprete appassionato e preciso. Ha partecipato a diversi concorsi musicali nazionali e internazionali, conquistando primi e secondi posti. 
+    Oltre a esibirsi, Gianmarco insegna pianoforte privatamente e fa parte del "Corpo Bandistico Città di Canicattini Bagni" come sassofonista. Il suo punto di forza? Un suono pulito e intenso, capace di dare vita a ogni nota.
+  </p>
+    <div class="gallery">
+    <img src="https://i.imgur.com/KNlc40x.jpeg" alt="Gianmarco al sax">
+   
+  </div>
+
+  <h3>Giovanni – Violino</h3>
+  <p>
+    Giovanni ha scelto il violino come suo strumento principale e lo ha reso parte integrante della sua vita musicale. Anche lui ha seguito un percorso di formazione privata, crescendo artisticamente grazie alle numerose collaborazioni con altri musicisti e alle esperienze nella musica d’insieme. 
+    La sua tecnica è sorprendente, ma ciò che colpisce di più è il suo orecchio musicale: impara e interpreta i brani con grande rapidità e precisione. Il suo violino aggiunge al duo un tocco lirico ed elegante.
+  </p>
+  <div class="gallery">
+    <img src="https://i.imgur.com/0ztf44i.jpeg" alt="Gianmarco al sax">
+   
+  </div>
+  <h3>Un duo, una visione condivisa</h3>
+  <p>
+    Gianmarco e Giovanni non si limitano a suonare insieme: prendono ogni decisione in modo condiviso, confrontandosi costantemente su ogni aspetto del progetto. Non esistono ruoli fissi, solo un grande impegno reciproco e la volontà di portare avanti, con dedizione e passione, la loro idea di musica.
+  </p>
+
+  
+</section>
+
+
+
+<section id="repertorio" data-aos="zoom-in-up">
+  <h2>Il nostro repertorio</h2>
+
+  <h3>Una selezione musicale per ogni occasione</h3>
+  <p>
+    Il repertorio del Duo Armonia è interamente strumentale e spazia tra generi diversi: classico, moderno, pop, house e colonne sonore. Grazie a questa varietà, riusciamo a creare l’atmosfera giusta per ogni tipo di evento, dai matrimoni più romantici alle serate nei locali, dalle cerimonie più intime alle feste più dinamiche.
+  </p>
+
+  <h3>Un repertorio in continua evoluzione</h3>
+  <p>
+    La nostra scaletta non è mai definitiva: siamo sempre alla ricerca di nuove ispirazioni e amiamo arricchirla con brani che sappiano sorprendere ed emozionare. Alcuni dei pezzi che eseguiamo più spesso includono <em>Jubel</em>, <em>Experience</em>, <em>Imagine</em>, <em>Careless Whisper</em>, <em>Mariage d’Amour</em> e <em>Hallelujah</em>.
+  </p>
+
+  <h3>Adattabilità e richieste personalizzate</h3>
+  <p>
+    Ogni evento è diverso, per questo ci teniamo a offrire una proposta musicale su misura. Il nostro repertorio si adatta alle esigenze del contesto e, con un preavviso sufficiente, possiamo preparare brani specifici su richiesta.
+  </p>
+
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init(); </script>
+<!-- Sezioni esistenti -->
+
+<section id="come-funziona" class="step-section" data-aos="fade-up">
+  <h2>Come funziona</h2>
+  <div class="step">
+    <h4>1. Contatto iniziale</h4>
+    <p>Scrivici o chiamaci per raccontarci l’evento e le tue esigenze.</p>
+  </div>
+  <div class="step">
+    <h4>2. Scelta del repertorio</h4>
+    <p>Concordiamo insieme i brani più adatti, oppure ci lasci carta bianca.</p>
+  </div>
+  <div class="step">
+    <h4>3. Preparazione tecnica</h4>
+    <p>Verifichiamo gli aspetti logistici e tecnici per un'esibizione perfetta.</p>
+  </div>
+  <div class="step">
+    <h4>4. Esibizione live</h4>
+    <p>Suoniamo con cuore e professionalità per rendere l’evento speciale.</p>
+  </div>
+
+<section id="galleria-foto" data-aos="fade-up">
+  <h2>Le nostre foto</h2>
+  <div class="gallery-grid">
+    <img src="https://i.imgur.com/Ue0HlIy.jpeg" alt="Esibizione dal vivo">
+    <img src="https://i.imgur.com/uyQBW2N.jpeg" alt="Prova musicale">
+    <img src="https://i.postimg.cc/d1NG9NgV/DUO1.jpg" alt="Evento privato">
+    <img src="https://i.postimg.cc/Bn3Nbk0r/DUO4.jpg" alt="Concerto Duo Armonia">
+    <img src="https://i.postimg.cc/c18cm04q/image.png" alt="50 anni di matrimonio">
+    <img src="https://i.postimg.cc/DzMqrY9y/image.png" alt="Concerto Duo Armonia">
+    <img src="https://i.postimg.cc/02MhDLhr/image.png" alt="Concerto Duo Armonia">
+    <img src="https://i.postimg.cc/NGVzsdLt/image.png" alt="Concerto Duo Armonia">
+    <!-- Altre immagini qui -->
+  </div>
+</section>
+
+
+<section id="video" data-aos="zoom-in-up">
+  <h2>Le nostre esibizioni</h2>
+  <p>Qui puoi vedere un estratto delle nostre performance, pubblicate sul nostro profilo Instagram.</p>
+
+  <blockquote class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/reel/DKusacAMPOW/" 
+      data-instgrm-version="14" 
+      style="background:#FFF; border:0; margin: 1rem auto; max-width:540px; width:100%; height: 900px;">
+  </blockquote>
+  <blockquote class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/reel/DGp_V8PtBEW/" 
+      data-instgrm-version="14" 
+      style="background:#FFF; border:0; margin: 1rem auto; max-width:540px; width:100%; height: 900px;">
+  </blockquote>
+ <blockquote class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/reel/DKEpIBGgFZu/" 
+      data-instgrm-version="14" 
+      style="background:#FFF; border:0; margin: 1rem auto; max-width:540px; width:100%; height: 900px;">
+  </blockquote>
+   <blockquote class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/reel/DGGrvyqtKVr/" 
+      data-instgrm-version="14" 
+      style="background:#FFF; border:0; margin: 1rem auto; max-width:540px; width:100%; height: 900px;">
+  </blockquote>
+
+  <script async src="https://www.instagram.com/embed.js"></script>
+</section>
+
+ <section id="recensioni">
+  <h2>Recensioni</h2>
+
+  <div class="recensione">
+    <p class="text-preview">
+      In occasione del 50° anniversario di matrimonio dei miei genitori, abbiamo 
+      avuto il grande piacere di ospitare l'esibizione del Duo Armonia che con la sua arte e naturale simpatia, ha saputo trasformare l'evento in un momento davvero speciale...
+    </p>
+    <p class="text-full" style="display: none;">
+    In occasione del 50° anniversario di matrimonio dei miei genitori, abbiamo avuto il grande piacere di ospitare l'esibizione del Duo Armonia che con la sua arte e 
+    naturale simpatia, ha saputo trasformare l'evento in un momento davvero speciale. Fin dalle prime note, la sua musica ha catturato l'attenzione e il cuore degli invitati.
+     La fusione tra il suono caldo del sax e la dolcezza del violino ha creato un'atmosfera unica, emozionante e raffinata, perfettamente in sintonia con il 
+     significato profondo della giornata. Nonostante la giovane età, i due musicisti hanno dimostrato una maturità artistica sorprendente, unita a una presenza scenica c
+     oinvolgente e genuina. Ogni brano è stato eseguito con passione e precisione, spaziando tra classici intramontabili e arrangiamenti moderni che hanno saputo 
+     toccare le corde dell'emozione. 
+    Gli applausi sentiti degli invitati sono stati la conferma di un successo pieno, meritato e condiviso. Un grazie sincero al Duo Armonia
+    </p>
+    <button class="toggle-btn"><font-color= black>Leggi di più</font-color></button>
+  </div>
+</section>
+<section id="faq" data-aos="fade-up">
+  <h2>Domande frequenti</h2>
+  <details>
+    <summary>Suonate anche all’aperto?</summary>
+    <p>Sì, purché ci siano le condizioni tecniche adatte (copertura, alimentazione elettrica).</p>
+  </details>
+  <details>
+    <summary>Fornite voi la strumentazione?</summary>
+    <p>Sì, portiamo tutto il necessario, compreso impianto audio e tastiera digitale.</p>
+  </details>
+  <details>
+    <summary>Accettate richieste personalizzate?</summary>
+    <p>Assolutamente sì. Possiamo preparare brani su richiesta con sufficiente preavviso.</p>
+  </details>
+</section>
+
+
+<section id="calendario" class="content" data-aos="fade-up">
+  <h2>Calendario disponibilità</h2>
+  <p>Controlla quando siamo disponibili per eventi e prenotazioni. Aggiorniamo costantemente il calendario!</p>
+
+  <div class="calendar-grid">
+    <!-- Giugno -->
+    <div class="calendar">
+      <div class="month">Giugno 2025</div>
+      <div class="days">
+        <span class="day">1</span>
+        <span class="day">2</span>
+        <span class="day">3</span>
+        <span class="day">4</span>
+        <span class="day">5</span>
+        <span class="day">6</span>
+        <span class="day">7</span>
+        <span class="day">8</span>
+        <span class="day">9</span>
+        <span class="day">10</span>
+        <span class="day">11</span>
+        <span class="day">12</span>
+        <span class="day">13</span>
+        <span class="day">14</span>
+        <span class="day">15</span>
+        <span class="day">16</span>
+        <span class="day">17</span>
+        <span class="day">18</span>
+        <span class="day">19</span>
+        <span class="day booked">20</span>
+        <span class="day booked">21</span>
+        <span class="day">22</span>
+        <span class="day">23</span>
+        <span class="day">24</span>
+        <span class="day">25</span>
+        <span class="day">26</span>
+        <span class="day booked">27</span>
+        <span class="day">28</span>
+        <span class="day">29</span>
+        <span class="day">30</span>
+        <!-- aggiungi altri giorni -->
+      </div>
+    </div>
+
+    <!-- Luglio -->
+    <div class="calendar">
+      <div class="month">Luglio 2025</div>
+      <div class="days">
+       <span class="day">1</span>
+        <span class="day">2</span>
+        <span class="day booked">3</span>
+        <span class="day booked">4</span>
+        <span class="day booked">5</span>
+        <span class="day booked">6</span>
+        <span class="day">7</span>
+        <span class="day">8</span>
+        <span class="day">9</span>
+        <span class="day">10</span>
+        <span class="day booked">11</span>
+        <span class="day booked">12</span>
+        <span class="day booked">13</span>
+
+        <span class="day">14</span>
+        <span class="day">15</span>
+        <span class="day">16</span>
+        <span class="day">17</span>
+        <span class="day">18</span>
+        <span class="day">19</span>
+        <span class="day booked">20</span>
+        <span class="day">21</span>
+        <span class="day">22</span>
+        <span class="day">23</span>
+        <span class="day booked">24</span>
+        <span class="day booked">25</span>
+        <span class="day booked">26</span>
+        <span class="day booked">27</span>
+        <span class="day booked">28</span>
+        <span class="day">29</span>
+        <span class="day">30</span>
+        <span class="day">31</span>
+      </div>
+    </div>
+
+    <!-- Agosto -->
+    <div class="calendar">
+      <div class="month">Agosto 2025</div>
+      <div class="days">
+        <span class="day">1</span>
+        <span class="day">2</span>
+        <span class="day">3</span>
+        <span class="day">4</span>
+        <span class="day">5</span>
+        <span class="day">6</span>
+        <span class="day">7</span>
+        <span class="day booked">8</span>
+        <span class="day">9</span>
+        <span class="day">10</span>
+        <span class="day">11</span>
+        <span class="day">12</span>
+        <span class="day">13</span>
+        <span class="day">14</span>
+        <span class="day booked">15</span>
+        <span class="day booked">16</span>
+        <span class="day">17</span>
+        <span class="day">18</span>
+        <span class="day">19</span>
+        <span class="day">20</span>
+        <span class="day">21</span>
+        <span class="day booked">22</span>
+        <span class="day booked">23</span>
+        <span class="day booked">24</span>
+        <span class="day">25</span>
+        <span class="day">26</span>
+        <span class="day booked">27</span>
+        <span class="day">28</span>
+        <span class="day">29</span>
+        <span class="day">30</span>
+        <span class="day">31</span>
+      </div>
+    </div>
+
+    <!-- Settembre -->
+    <div class="calendar">
+      <div class="month">Settembre 2025</div>
+      <div class="days">
+        <span class="day">1</span>
+        <span class="day">2</span>
+        <span class="day">3</span>
+        <span class="day">4</span>
+        <span class="day">5</span>
+        <span class="day">6</span>
+        <span class="day">7</span>
+        <span class="day">8</span>
+        <span class="day">9</span>
+        <span class="day">10</span>
+        <span class="day">11</span>
+        <span class="day">12</span>
+        <span class="day">13</span>
+        <span class="day">14</span>
+        <span class="day">15</span>
+        <span class="day">16</span>
+        <span class="day">17</span>
+        <span class="day">18</span>
+        <span class="day">19</span>
+        <span class="day">20</span>
+        <span class="day">21</span>
+        <span class="day">22</span>
+        <span class="day">23</span>
+        <span class="day">24</span>
+        <span class="day">25</span>
+        <span class="day">26</span>
+        <span class="day">27</span>
+        <span class="day">28</span>
+        <span class="day">29</span>
+        <span class="day">30</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="box free"></span> Disponibile
+    <span class="box booked"></span> Prenotato
+  </div>
+</section>
+
+
+
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Per richieste e prenotazioni, scrivici direttamente:</p>
+	<form action="https://formspree.io/f/xeokzeow" method="POST">
+      <input type="text" name="name" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="message" rows="5" placeholder="Il tuo messaggio" required></textarea>
+      <input type="submit" value="Invia messaggio">
+    </form>
+    <div id="thankyou-message" style="display:none; padding: 1rem; background: #dff0d8; color: #3c763d; border-radius: 5px; margin-top: 1rem;">
+  Grazie per il tuo messaggio! Ti risponderemo presto. 🎶
+</div>
+  </section>
+
+<section id="richiesta" class="request-form" data-aos="zoom-in">
+  <h3>Richiesta personalizzata</h3>
+  <form action="https://formspree.io/f/xeokzeow" method="POST">
+    <input type="text" name="name" placeholder="Il tuo nome" required>
+    <input type="email" name="email" placeholder="La tua email" required>
+    <input type="text" name="evento" placeholder="Tipo di evento (es. matrimonio, cena, festa privata...)" required>
+    <input type="text" name="data" placeholder="Data dell’evento">
+    <input type="text" name="luogo" placeholder="Luogo dell’evento">
+    <textarea name="richiesta" rows="5" placeholder="Raccontaci cosa hai in mente, richieste musicali, atmosfera desiderata..." required></textarea>
+    <button type="submit">Invia richiesta</button>
+  </form>
+</section>
+
+  
+  <footer>
+  <div class="footer-content">
+    
+
+    <div class="footer-section">
+      <h4>Link utili</h4>
+      <ul>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#repertorio">Repertorio</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contatti</h4>
+      <p> <font-color= black> Email: duoarmoniamusic@gmail.com</font-color></p>
+      <p><font-color= black> Telefono: +39 3801306646</font-color></p>
+    </div>
+  </div>
+
+
+  <div class="social-icons">
+  <a href="https://www.instagram.com/duo.armonia.music/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/duo.armonia.music" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="mailto:duoarmoniamusic@gmail.com"><i class="fas fa-envelope"></i></a>
+   <a href="https://wa.me/393801306646" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+  <div class="footer-bottom">
+    <p> <font-color= black> &copy;2025 Duo Armonia – Tutti i diritti riservati </font-color></p>
+  </div>
+</footer>
+ 
+<script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const preview = button.previousElementSibling.previousElementSibling;
+        const full = button.previousElementSibling;
+
+        if (full.style.display === 'none') {
+          full.style.display = 'block';
+          preview.style.display = 'none';
+          button.textContent = 'Leggi di meno';
+        } else {
+          full.style.display = 'none';
+          preview.style.display = 'block';
+          button.textContent = 'Leggi di più';
+        }
+      });
+    });
+  </script>
+
+ 
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('hamburger-menu');
+    menu.classList.toggle('show');
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    menu.classList.toggle("open");
+  }
+</script>
+
+</body>
+</html>
